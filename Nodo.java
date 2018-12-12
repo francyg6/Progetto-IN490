@@ -2,8 +2,6 @@ import java.util.LinkedList;
 //import java.util.ListIterator;
 
 public class Nodo {
-	
-	private int nome;
 	private LinkedList<Nodo> outLink;// figli
 	private Nodo inLink;//padre
 	private LinkedList<Nodo> inPointers;//puntatori entranti
