@@ -10,7 +10,6 @@ public class Nodo {
 	
 	//costruttore
 	public Nodo(int n,Nodo padre) {
-		this.setNome(n);
 		this.setCfc(new LinkedList<Integer>() );
 		this.addCfc(n);
 		this.setOutLink(new LinkedList<Nodo>());
@@ -55,15 +54,6 @@ public class Nodo {
 		this.getOutPointers().remove(nodo);
 		nodo.getInPointers().remove(this);
 		
-	}
-
-	//getter e setters di nome
-	public int getNome() {
-		return nome;
-	}
-
-	public void setNome(int nome) {
-		this.nome = nome;
 	}
 
 	//getters e setters di outLink
